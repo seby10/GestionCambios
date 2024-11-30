@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Solicitud de Cambio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gestión de Cambios</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Formulario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gestionar_solicitudes.php">Solicitudes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <h2>Formulario de Solicitud de Cambio</h2>
+    <form action="procesar_formulario.php" method="POST">
+      <!-- Información General -->
+      <div class="mb-3">
+        <label for="nombre_solicitante" class="form-label">Nombre del Solicitante</label>
+        <input type="text" id="nombre_solicitante" name="nombre_solicitante" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="area_departamento" class="form-label">Área/Departamento</label>
+        <input type="text" id="area_departamento" name="area_departamento" class="form-control" required>
+      </div>
+      <!-- Descripción del Cambio -->
+      <div class="mb-3">
+        <label for="titulo_cambio" class="form-label">Título del Cambio</label>
+        <input type="text" id="titulo_cambio" name="titulo_cambio" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="descripcion_detallada" class="form-label">Descripción Detallada</label>
+        <textarea id="descripcion_detallada" name="descripcion_detallada" class="form-control" rows="4"
+          required></textarea>
+      </div>
+      <!-- Impacto -->
+      <div class="mb-3">
+        <label for="impacto_tiempo" class="form-label">Impacto en el Tiempo</label>
+        <input type="text" id="impacto_tiempo" name="impacto_tiempo" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="impacto_costo" class="form-label">Impacto en el Costo</label>
+        <input type="text" id="impacto_costo" name="impacto_costo" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="impacto_calidad" class="form-label">Impacto en la Calidad</label>
+        <input type="text" id="impacto_calidad" name="impacto_calidad" class="form-control">
+      </div>
+      <!-- Prioridad -->
+      <div class="mb-3">
+        <label for="nivel_urgencia" class="form-label">Nivel de Urgencia</label>
+        <select id="nivel_urgencia" name="nivel_urgencia" class="form-select" required>
+          <option value="Emergencia">Emergencia</option>
+          <option value="Alto">Alto</option>
+          <option value="Medio">Medio</option>
+          <option value="Bajo">Bajo</option>
+        </select>
+      </div>
+      <!-- Fecha Deseada -->
+      <div class="mb-3">
+        <label for="fecha_deseada" class="form-label">Fecha Deseada para Implementación</label>
+        <input type="date" id="fecha_deseada" name="fecha_deseada" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
