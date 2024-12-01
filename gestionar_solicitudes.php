@@ -79,10 +79,10 @@ $result = $conn->query($sql);
                                     <input type="text" name="comentarios" placeholder="Comentarios" class="form-control me-2" value="<?php echo htmlspecialchars($row['comentarios']); ?>">
 
                                     <select name="programador" id="programador" class="form-select me-2" required>
-                                        <option value="Sebastián Constante" <?php echo ($row['programador'] == 'Sebastián Constante') ? 'selected' : ''; ?>>Sebastián Constante</option>
-                                        <option value="Jhanina Conterón" <?php echo ($row['programador'] == 'Jhanina Conterón') ? 'selected' : ''; ?>>Jhanina Conterón</option>
-                                        <option value="Daylé García" <?php echo ($row['programador'] == 'Daylé García') ? 'selected' : ''; ?>>Daylé García</option>
-                                        <option value="Pablo Montero" <?php echo ($row['programador'] == 'Pablo Montero') ? 'selected' : ''; ?>>Pablo Montero</option>
+                                        <option value="Sebastián" <?php echo ($row['programador'] == 'Sebastián Constante') ? 'selected' : ''; ?>>Sebastián Constante</option>
+                                        <option value="Jhanina" <?php echo ($row['programador'] == 'Jhanina Conterón') ? 'selected' : ''; ?>>Jhanina Conterón</option>
+                                        <option value="Daylé" <?php echo ($row['programador'] == 'Daylé García') ? 'selected' : ''; ?>>Daylé García</option>
+                                        <option value="Pablo" <?php echo ($row['programador'] == 'Pablo Montero') ? 'selected' : ''; ?>>Pablo Montero</option>
                                     </select>
 
                                     <!-- Botón para enviar el formulario -->
