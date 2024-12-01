@@ -50,6 +50,8 @@ $result = $conn->query($sql);
                     <th>Área</th>
                     <th>Título</th>
                     <th>Urgencia</th>
+                    <th>Tipo de Cambio</th>
+                    <th>Razón</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
@@ -64,6 +66,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['area_departamento']; ?></td>
                             <td><?php echo $row['titulo_cambio']; ?></td>
                             <td><?php echo $row['nivel_urgencia']; ?></td>
+                            <td><?php echo $row['tipo_cambio']; ?></td>
+                            <td><?php echo $row['razon']; ?></td>
                             <td><?php echo $row['estado']; ?></td>
                             <td>
                                 <!-- Formulario para actualizar solicitud -->
