@@ -48,6 +48,7 @@ $result = $conn->query($sql);
                 <tr>
                     <th>ID</th>
                     <th>Fecha Solicitud</th>
+                    <th>Fecha Deseada</th>
                     <th>Solicitante</th>
                     <th>Área</th>
                     <th>Título</th>
@@ -64,6 +65,7 @@ $result = $conn->query($sql);
                         <tr>
                             <td><?php echo $row['id']; ?></td>
                             <td><?php echo $row['fecha_solicitud']; ?></td>
+                            <td><?php echo $row['fecha_deseada']; ?></td>
                             <td><?php echo $row['nombre_solicitante']; ?></td>
                             <td><?php echo $row['area_departamento']; ?></td>
                             <td><?php echo $row['titulo_cambio']; ?></td>

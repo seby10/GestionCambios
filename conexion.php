@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost:3307";
+$servername = "localhost:3306";
 $username = "root";
 $password = "";
 $dbname = "gestion_cambios"; // Asegúrate de tener esta base de datos creada
